@@ -32,3 +32,6 @@ Thumbs.db
 # Build
 dist/
 coverage/
+# Project snapshots
+snapshot.md
+structure.txt
