@@ -35,3 +35,4 @@ coverage/
 # Project snapshots
 snapshot.md
 structure.txt
+*.tsbuildinfo
