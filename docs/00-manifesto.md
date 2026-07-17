@@ -1,6 +1,6 @@
 # Habinet Manifesto
 
-> *Everything has context.*
+> _Everything has context._
 
 ---
 
@@ -104,15 +104,15 @@ One connected context.
 
 ## Our Principles
 
-* Everything has context.
-* Context belongs to people, not devices.
-* Identity is permanent.
-* History matters.
-* Relationships are first-class.
-* AI should understand the same context as humans.
-* Portability is a right, not a feature.
-* Simplicity enables longevity.
-* Architecture is part of the product.
+- Everything has context.
+- Context belongs to people, not devices.
+- Identity is permanent.
+- History matters.
+- Relationships are first-class.
+- AI should understand the same context as humans.
+- Portability is a right, not a feature.
+- Simplicity enables longevity.
+- Architecture is part of the product.
 
 ---
 

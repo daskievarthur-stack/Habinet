@@ -1,4 +1,4 @@
-import type { IdentityId } from "./identity-id";
+import type { IdentityId } from './identity-id';
 
 /**
  * Stable identity of any entity in the Habinet kernel.

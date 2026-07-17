@@ -1,5 +1,5 @@
-import type { Identity } from "./identity";
-import type { IdentityId } from "./identity-id";
+import type { Identity } from './identity';
+import type { IdentityId } from './identity-id';
 
 /**
  * Creates a new immutable identity.
