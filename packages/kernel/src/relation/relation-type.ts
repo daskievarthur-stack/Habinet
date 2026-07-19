@@ -1,1 +1,2 @@
-export type RelationType = 'contains' | 'references' | 'dependsOn' | 'belongsTo' | 'createdBy';
+export type RelationType =
+  'contains' | 'references' | 'dependsOn' | 'belongsTo' | 'createdBy';

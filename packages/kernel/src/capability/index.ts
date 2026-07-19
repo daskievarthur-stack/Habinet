@@ -1,3 +1,3 @@
-export * from "./capability";
-export * from "./capability-name";
-export * from "./create-capability";
+export * from './capability';
+export * from './capability-name';
+export * from './create-capability';

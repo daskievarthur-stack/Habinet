@@ -1,9 +1,5 @@
-import type { Grain } from "../grain";
-import {
-  createRelation,
-  type Relation,
-  type RelationType,
-} from "../relation";
+import type { Grain } from '../grain';
+import { createRelation, type Relation, type RelationType } from '../relation';
 
 export interface AppendRelationInput {
   source: Grain;
@@ -11,12 +7,6 @@ export interface AppendRelationInput {
   type: RelationType;
 }
 
-export function appendRelation(
-  input: AppendRelationInput,
-): Relation {
-  return createRelation(
-    input.source,
-    input.target,
-    input.type,
-  );
+export function appendRelation(input: AppendRelationInput): Relation {
+  return createRelation(input.source, input.target, input.type);
 }

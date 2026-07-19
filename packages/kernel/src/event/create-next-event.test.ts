@@ -11,9 +11,17 @@ describe('createNextEvent', () => {
   it('creates a new event', () => {
     const grain = createGrain(createIdentity(createIdentityId()), 'document');
 
-    const created = createEvent(createIdentity(createIdentityId()), grain, 'created');
+    const created = createEvent(
+      createIdentity(createIdentityId()),
+      grain,
+      'created',
+    );
 
-    const renamed = createNextEvent(createIdentity(createIdentityId()), created, 'updated');
+    const renamed = createNextEvent(
+      createIdentity(createIdentityId()),
+      created,
+      'updated',
+    );
 
     expect(renamed.type).toBe('updated');
   });
@@ -21,9 +29,17 @@ describe('createNextEvent', () => {
   it('inherits grain', () => {
     const grain = createGrain(createIdentity(createIdentityId()), 'document');
 
-    const created = createEvent(createIdentity(createIdentityId()), grain, 'created');
+    const created = createEvent(
+      createIdentity(createIdentityId()),
+      grain,
+      'created',
+    );
 
-    const renamed = createNextEvent(createIdentity(createIdentityId()), created, 'updated');
+    const renamed = createNextEvent(
+      createIdentity(createIdentityId()),
+      created,
+      'updated',
+    );
 
     expect(renamed.grain).toBe(grain);
   });
@@ -31,9 +47,17 @@ describe('createNextEvent', () => {
   it('references previous event', () => {
     const grain = createGrain(createIdentity(createIdentityId()), 'document');
 
-    const created = createEvent(createIdentity(createIdentityId()), grain, 'created');
+    const created = createEvent(
+      createIdentity(createIdentityId()),
+      grain,
+      'created',
+    );
 
-    const renamed = createNextEvent(createIdentity(createIdentityId()), created, 'updated');
+    const renamed = createNextEvent(
+      createIdentity(createIdentityId()),
+      created,
+      'updated',
+    );
 
     expect(renamed.previousEventId).toBe(created.identity.id);
   });
@@ -41,7 +65,11 @@ describe('createNextEvent', () => {
   it('does not modify previous event', () => {
     const grain = createGrain(createIdentity(createIdentityId()), 'document');
 
-    const created = createEvent(createIdentity(createIdentityId()), grain, 'created');
+    const created = createEvent(
+      createIdentity(createIdentityId()),
+      grain,
+      'created',
+    );
 
     createNextEvent(createIdentity(createIdentityId()), created, 'updated');
 

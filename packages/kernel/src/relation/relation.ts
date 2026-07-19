@@ -1,5 +1,5 @@
-import type { Grain } from "../grain";
-import type { RelationType } from "./relation-type";
+import type { Grain } from '../grain';
+import type { RelationType } from './relation-type';
 
 export interface Relation {
   readonly source: Grain;

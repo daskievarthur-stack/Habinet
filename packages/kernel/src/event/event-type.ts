@@ -1,1 +1,2 @@
-export type EventType = 'created' | 'updated' | 'deleted' | 'linked' | 'unlinked';
+export type EventType =
+  'created' | 'updated' | 'deleted' | 'linked' | 'unlinked';

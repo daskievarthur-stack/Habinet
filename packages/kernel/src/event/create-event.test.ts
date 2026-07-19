@@ -10,7 +10,11 @@ describe('Event invariants', () => {
   it('is immutable', () => {
     const grain = createGrain(createIdentity(createIdentityId()), 'document');
 
-    const event = createEvent(createIdentity(createIdentityId()), grain, 'created');
+    const event = createEvent(
+      createIdentity(createIdentityId()),
+      grain,
+      'created',
+    );
 
     expect(Object.isFrozen(event)).toBe(true);
   });
@@ -18,7 +22,11 @@ describe('Event invariants', () => {
   it('always belongs to a grain', () => {
     const grain = createGrain(createIdentity(createIdentityId()), 'document');
 
-    const event = createEvent(createIdentity(createIdentityId()), grain, 'created');
+    const event = createEvent(
+      createIdentity(createIdentityId()),
+      grain,
+      'created',
+    );
 
     expect(event.grain).toBe(grain);
   });
@@ -26,7 +34,11 @@ describe('Event invariants', () => {
   it('always has an event type', () => {
     const grain = createGrain(createIdentity(createIdentityId()), 'document');
 
-    const event = createEvent(createIdentity(createIdentityId()), grain, 'created');
+    const event = createEvent(
+      createIdentity(createIdentityId()),
+      grain,
+      'created',
+    );
 
     expect(event.type).toBe('created');
   });
@@ -34,7 +46,11 @@ describe('Event invariants', () => {
   it('always has a timestamp', () => {
     const grain = createGrain(createIdentity(createIdentityId()), 'document');
 
-    const event = createEvent(createIdentity(createIdentityId()), grain, 'created');
+    const event = createEvent(
+      createIdentity(createIdentityId()),
+      grain,
+      'created',
+    );
 
     expect(event.timestamp).toBeInstanceOf(Date);
   });
