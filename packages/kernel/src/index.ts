@@ -4,3 +4,4 @@ export * from './relation';
 export * from './event';
 export * from './timeline';
 export * from "./operations";
+export * from "./capability";
